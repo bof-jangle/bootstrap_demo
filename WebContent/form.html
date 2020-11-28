@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>垂直表单</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<form action="#" class="form-group">
+			<div class="form-group">
+				<label for="text" class=" control-label">text:</label>
+				<!--  -->
+				<input type="text" autofocus required id="text"
+					placeholder="First Name" required class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a1" class=" control-label">color:</label>
+				<!--  -->
+				<input type="color" id="a1" required class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a2" class=" control-label">date:</label>
+				<!--  -->
+				<input type="date" id="a2" required class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a3" class=" control-label">datetime:</label>
+				<!--  -->
+				<input type="datetime" id="a3" required class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a4" class=" control-label">datetime-local:</label>
+				<!--  -->
+				<input type="datetime-local" required id="a4" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a5" class=" control-label">email:</label>
+				<!--  -->
+				<input type="email" id="a5" required="required" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a6" class=" control-label">month:</label>
+				<!--  -->
+				<input type="month" id="a6" required="required" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a7" class=" control-label">number:</label>
+				<!--  -->
+				<input type="number" id="a7" required="required"
+					class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a8" class=" control-label">password:</label>
+				<!--  -->
+				<input type="password" id="a8" required="required"
+					class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a9" class=" control-label">search:</label>
+				<!--  -->
+				<input type="search" id="a9" required="required"
+					class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a10" class=" control-label">tel:</label>
+				<!--  -->
+				<input type="tel" id="a10" required="required" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a11" class=" control-label">time:</label>
+				<!--  -->
+				<input type="time" id="a11" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a12" class=" control-label">url:</label>
+				<!--  -->
+				<input type="url" id="a12" required class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a13" class=" control-label">week:</label>
+				<!--  -->
+				<input type="week" id="a13" required class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="a14" class=" control-label">textarea:</label>
+				<!--  -->
+				<textarea id="a14" required rows="4" class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="a15" class=" control-label">静态P:</label>
+				<!--  -->
+				<p id="a15" class="form-control-static">只读，静态</p>
+			</div>
+			<div class="checkbox">
+				<label> <input type="checkbox" value="one"> Option
+					one
+				</label>
+			</div>
+			<div class="checkbox-inline">
+				<label> <input type="checkbox" value="two"> Option
+					two
+				</label>
+			</div>
+			<div class="checkbox-inline disabled">
+				<label> <input type="checkbox" value="three" disabled>
+					Option three -disabled
+				</label>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" id="aa" value="v"
+					aria-label="Label for assistive devices">
+			</div>
+			<div class="radio">
+				<label><input type="radio" name="r" value="r-one">1
+					radio button</label>
+			</div>
+			<div class="radio-inline">
+				<label><input type="radio" name="r" value="r-2">2
+					radio button</label>
+			</div>
+			<div class="radio-inline disabled">
+				<label><input type="radio" name="r" disabled value="r-3">3
+					radio button</label>
+			</div>
+
+			<select id="dropdown" class="form-control">
+				<option>A</option>
+				<option>B</option>
+				<option>C</option>
+				<option>D</option>
+			</select>
+			<div class="form-group">
+				<label class="control-label">帮助块：</label> <span class="help-block"
+					id="helpfield">This text describes a form field.</span>
+			</div>
+
+
+			<div class="form-group">
+				<label class="control-label">输入组：</label>
+				<div class="input-group">
+					<label for="cost" class="sr-only">输入组：</label>
+					<div class="input-group-addon">$</div>
+					<div>
+						<input type="number" required id="cost" placeholder="输入组demo"
+							class="form-control">
+					</div>
+					<div class="input-group-addon">.00</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="control-label">大号输入组：</label>
+				<div class="input-group input-group-lg">
+					<label for="username" class="sr-only">Username</label> <span
+						class="input-group-addon"><span
+						class="glyphicon glyphicon-user"></span></span> <input type="text"
+						required id="username" placeholder="Username" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label">小号输入组：</label>
+				<div class="input-group input-group-sm">
+					<label for="username" class="sr-only">Username</label> <span
+						class="input-group-addon"><span
+						class="glyphicon glyphicon-user"></span></span> <input type="text"
+						required id="username" placeholder="Username" class="form-control">
+				</div>
+			</div>
+			<div class="form-group has-success">
+				<label for="textSuccess">Success</label> <input type="text"
+					class="form-control" id="textSuccess" placeholder="Success">
+			</div>
+			<div class="form-group has-warning">
+				<label for="textWarning">Success</label> <input type="text"
+					class="form-control" id="textWarning" placeholder="Warning">
+			</div>
+			<div class="form-group has-error">
+				<label for="textError">Error</label> <input type="text"
+					class="form-control" id="textError" placeholder="Error">
+			</div>
+			<div class="form-group has-success has-feedback">
+				<label for="textSuccess2">Success2</label> <input type="text"
+					class="form-control" id="textSuccess2" placeholder="Success">
+				<span class="glyphicon glyphicon-ok form-control-feedback"
+					aria-hidden="true"></span>
+			</div>
+
+
+
+
+			<div class="form-group">
+				<button class="btn btn-success">提交</button>
+			</div>
+		</form>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
